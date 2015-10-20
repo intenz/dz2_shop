@@ -1,0 +1,7 @@
+mixin nav(className, items, activeIndx)
+	nav(class= className)
+		.container
+			ul(class= className + "__list")
+				each item, indx in items
+					li(class=className + "__item " + ((activeIndx == indx) ? className + '__item' + '_active' : ''))
+						a(href="#" class= className + "__link")= item

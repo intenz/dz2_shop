@@ -1,0 +1,31 @@
+header.header_info
+	.container
+		.socials.clearfix
+			ul.socials__list
+				- var socials = ['fb', 'vk', 'tw']
+				each social in socials
+					li.socials__item
+						a(href="#" class="socials__link socials__link_" + social)= social
+			ul.contact__list
+				li.contact__item
+					a.social__link ул.Маяковская 6, офис 17
+				li.contact__item
+					a.social__link.social__link_number +7 (921) 123-12-13
+header.header_page
+	.container
+		.logo
+			a(href="#").logo__link
+				img(src="img/logo.png" alt="logotip")
+		.search
+			form(method="post")
+				input(type="text" placeholder="Что будем искать").search__text
+				input(type="submit" value="Найти").search__submit
+		.nav-header
+			ul.nav-header__list
+				li.nav-header__item.nav-header_active
+					a(href="#").nav-header_link Карта проезда
+				li.nav-header__item
+					a(href="#").nav-header_link История заказов
+				li.nav-header__item
+					a(href="#").nav-header_link Корзина
+
