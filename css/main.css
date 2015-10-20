@@ -589,8 +589,8 @@ p {
 /* --------- sections --------- */
 .header_info {
   background: #fff;
-  padding: 25px 0 26px;
-  border-bottom: 1px solid #ebedef;
+  padding: 25px 0 25px;
+  border-bottom: 2px solid #ebedef;
 }
 
 .socials__list {
@@ -654,7 +654,7 @@ p {
 
 .header_page {
   vertical-align: top;
-  padding: 30px 0;
+  padding: 30px 0 24px;
 }
 
 .logo {
@@ -725,4 +725,75 @@ p {
 }
 .nav-header_active .nav-header_link:hover {
   text-decoration: underline;
+}
+
+.navigation {
+  background: #fff;
+  border-bottom: 2px solid #ebedef;
+  margin-bottom: 25px;
+}
+
+.navigation__item {
+  display: inline-block;
+  margin-left: -1px;
+  margin-right: -2px;
+  padding: 16px 13px 15px 13px;
+}
+.navigation__item:first-child {
+  padding-left: 24px;
+  margin: 0;
+  margin-right: -3px;
+}
+.navigation__item:hover {
+  background: #e4e2e2;
+}
+.navigation__item:last-child {
+  padding-right: 10px;
+}
+
+.navigation__link {
+  color: #333;
+  font-size: 16px;
+}
+
+.navigation__item_active,
+.navigation__item:active {
+  background: #ff6600;
+}
+
+.navigation__item:active .navigation__link {
+  color: #fff;
+}
+
+.navigation__item_active .navigation__link {
+  color: #fff;
+}
+
+.navigation__item_active:hover {
+  background: #ff6000;
+}
+
+.list_page {
+  margin-bottom: 20px;
+}
+
+.list_page__item {
+  display: inline-block;
+}
+
+.list_page__item_chars {
+  font-size: 18px;
+}
+
+.list_page__link {
+  color: #333;
+}
+
+.list_page__item_active {
+  text-decoration: underline;
+}
+
+.list_page__item_active .list_page__link {
+  padding-bottom: 2px;
+  color: #ff6600;
 }

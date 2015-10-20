@@ -1,4 +1,4 @@
- Инструкции по установке 
+> instuction
 
 1. git clone httpsgithub.comintenzdz2-shop site
 2. cd site
