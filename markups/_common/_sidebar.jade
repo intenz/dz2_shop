@@ -1,6 +1,11 @@
-.sidebar
-	.accoderon
-		- for (var i = 1; i < 5; i++)
-			.accodeon__content
-				.class-wrapper
-					.class Я пункт номер #{i}
+.accordeon
+	.accordeon__content
+		h2.accordeon__item.accordeon__item_acive Наличие в магазинах
+		.accordeon__item
+			a(href="#").accordeon__link Бренды
+		.accordeon__item
+			a(href="#").accordeon__link Цена
+		.accordeon__item
+			a(href="#").accordeon__link Цвет
+		.accordeon__item
+			a(href="#").accordeon__link Операционные системы
