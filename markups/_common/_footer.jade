@@ -1,4 +1,14 @@
 footer.footer
 			.container
-				.footer__content
-					| &copy; Все права защищены
+				.logo
+					a(href="#").logo__link.logo__link_footer
+						img(src="img/logo_footer.png" alt="logotip")
+				.socials.socials_footer.clearfix
+					ul.socials__list.socials__list_footer
+						- var socials = ['fb_footer', 'vk_footer', 'tw_footer']
+						each social in socials
+							li.socials__item.socials__item_footer
+								a(href="#" class="socials__link socials__link_" + social)= social
+				+nav('navigation_footer', ['Планшеты', 'Мобильные телефоны', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника'], 1)
+			.footer__content
+				| &copy; All rights reserved. 2015. no copy alowed
