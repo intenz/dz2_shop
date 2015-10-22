@@ -20,15 +20,27 @@
 .accordeon__trigger,
 .sidebar-nav__link {
 	display: block;
+	position: relative;
 	padding: 12px 5px 15px 27px;
 	font-size: 16px;
 	font-weight: 900;
-	@include icons-sprite(accordeon_chek);
 	color: #333;
 	&:hover {
 		background: #d9e5ea;
 	}
 }
+
+.accordeon__trigger:after {
+	content: '';
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	@include get-sprite(sprite-map('icons/*.png', $spacing: 70px),accordeon_chek);
+}
+.accordeon__item.active .accordeon__trigger:after {
+	@include get-sprite(sprite-map('icons/*.png', $spacing: 70px),accordeon_cheked);
+}
+
 .sidebar-nav__item.active .sidebar-nav__link {
 	background: #d9e5ea;
 }

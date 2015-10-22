@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
     	jQuery("#amount, #ampunt1").keypress(function(event){
     		var key,keyChar;
-    		if(!event) var event = window.event;
+    		if (!event) var event = window.event;
 
     		if (event.keyCode) key = event.keyCode;
     		else if(event.which) key = event.which;

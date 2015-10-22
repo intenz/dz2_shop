@@ -1,5 +1,5 @@
 .footer {
-	background: url(../img/bg_footer.png)no-repeat;
+	background: url(../img/bg_footer.png) no-repeat;
 	background-size: cover;
 	padding: 30px 0 0;
 }
@@ -28,6 +28,15 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 	.socials__link_#{$social} {
 		@include get-sprite($socials-map, $social);
 	}
+}
+	.socials__link_fb_footer:hover {
+		@include get-sprite($socials-map,fb_footer_hover);
+}
+		.socials__link_tw_footer:hover {
+		@include get-sprite($socials-map,tw_footer_hover);
+}
+		.socials__link_vk_footer:hover {
+		@include get-sprite($socials-map,vk_footer_hover);
 }
 
 .navigation_footer {

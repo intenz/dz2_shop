@@ -26,15 +26,15 @@
 .bar_form {
 	display: inline-block;
 	margin-left: 20px;
-	padding-top: 15px;
+	padding-top: 11px;
 }
 
 .bar__lable {
+	position: relative;
 	color: #5d656c;
 }
 
 .bar__select {
-	background: $socials-map no-repeat 122px -778px #fff;
 	margin-left: 5px;
 	width: 140px;
 	box-sizing: border-box;
@@ -47,6 +47,14 @@
 	box-shadow: 0px 1px 0 2px rgba(255, 255, 255, 0.3);
 }
 
+.bar__lable:after {
+	content: '';
+	position: absolute;
+	right: 3px;
+	top: 8px;
+	@include get-sprite($socials-map,selec_chek);
+}
+
 .bar_list {
 	float: right;
 	display: inline-block;
@@ -55,43 +63,53 @@
 .bar__item {
 	margin-right: -1px;
 	display: inline-block;
-	padding: 20px 15px 15px;
+	padding: 20px 16px 15px;
 	border-left: 1px solid #dee1e4;
 	&:first-child {
 		vertical-align: top;
-		padding: 18px 10px 0 0;
+		padding: 15px 12px 0 0;
 		border: none;
 	}
 	&:last-child {
-		padding: 20px 17px 15px
+		padding: 20px 17px 15px;
 	}
 }
 
 .bar__link {
 	display: block;
+	text-indent: -9999px;
 	width: 18px;
 	height: 18px;
-	text-indent: -9999px;
 }
 
 .bar__link_ls1 {
-	background: $socials-map no-repeat 3px -80px;
+	@include get-sprite($socials-map,bar_list);
+		width: 18px;
+	height: 18px;
 	&:hover {
-		background: $socials-map no-repeat 2px -514px;
+		@include get-sprite($socials-map,bar_list_hover);
 	}
 }
 .bar__link_ls2 {
-	background: $socials-map no-repeat 2px -167px;
+	@include get-sprite($socials-map,bar_list2);
+		width: 18px;
+	height: 18px;
 	&:hover {
-		background: $socials-map no-repeat 1px -253px;
+		@include get-sprite($socials-map,bar_list2_hover);
 	}
 }
 .bar__link_ls3 {
-	background: $socials-map no-repeat 0px -340px;
+	@include get-sprite($socials-map,bar_list3);
+		width: 18px;
+	height: 18px;
 	&:hover {
-		background: $socials-map no-repeat -1px -426px;
+		@include get-sprite($socials-map,bar_list3_hover);
 	}
 }
+.bar__link {
+	background-position-x: 1px;
+}
+
 .phone_list {
 	margin-bottom: 71px;
 }
@@ -121,24 +139,31 @@
 
 .phone__link {
 	display: block;
-	margin: 0 30px;
-	padding: 5px 25px;
+	margin: 0 38px;
+	padding: 3px 15px;
 	background: #fff;
 	border: 1px solid #dee1e4;
 	border-radius: 3px;
-	margin-bottom: 10px;
+	margin-bottom: 13px;
+}
+
+.slid_show_list {
+	margin-bottom: 13px;
 }
 
 .slid_show__item {
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 14px;
 	&:first-child {
 		margin-left: 0;
 	}
-	width: 30px;
-	height: 30px;
+	width: 32px;
+	height: 32px;
 	background: #fff;
 	border: 1px solid #dee1e4;
+	&:hover {
+		border-color: #ff6600;
+	}
 }
 
 .slid_show__link {

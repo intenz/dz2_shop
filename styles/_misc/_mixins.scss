@@ -1,5 +1,11 @@
 /* --------- mixins --------- */
-
+@mixin resize-sprite($map, $sprite, $percent) {
+  $spritePath:    sprite-path($map);
+  $spriteWidth:   icons-width($spritePath);
+  $spriteHeight:  icons-height($spritePath);
+  $width: icons-width(sprite-file($map, $sprite));
+  $height: icons-height(sprite-file($map, $sprite));
+}
 @mixin inlineblock {
 	display: inline-block;
 	vertical-align: top;
@@ -54,4 +60,19 @@
 	background-image:         linear-gradient(to bottom, $top-color, $bottom-color); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
 }
+
+@mixin get-sprite ($map, $icon) {
+	$sprite-image: sprite-file($map, $icon);
+	$sprite-map: sprite-url($map);
+	$sprite-position: sprite-position($map, $icon);
+
+	background: $sprite-map $sprite-position no-repeat;
+
+	$sprite-height: image-height($sprite-image);
+	$sprite-width: image-width($sprite-image);
+
+	height: $sprite-height;
+	width: $sprite-width;
+}
+
 

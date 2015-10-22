@@ -1,20 +1,7 @@
-@mixin get-sprite ($map, $icon) {
-	$sprite-image: sprite-file($map, $icon);
-	$sprite-map: sprite-url($map);
-	$sprite-position: sprite-position($map, $icon);
-
-	background: $sprite-map $sprite-position no-repeat;
-
-	$sprite-height: image-height($sprite-image);
-	$sprite-width: image-width($sprite-image);
-
-	height: $sprite-height;
-	width: $sprite-width;
-}
 
 .header_info {
 	background: #fff;
-	padding: 25px 0 28px;
+	padding: 25px 0 26px;
 	border-bottom: 2px solid #ebedef;
 }
 
@@ -46,34 +33,59 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 		@include get-sprite($socials-map, $social);
 	}
 }
+	.socials__link_fb:hover {
+		@include get-sprite($socials-map,fb_hover);
+}
+		.socials__link_tw:hover {
+		@include get-sprite($socials-map,tw_hover);
+}
+		.socials__link_vk:hover {
+		@include get-sprite($socials-map,vk_hover);
+}
 
 .contact__list {
-	margin-top: 2px;
+	margin-top: 1px;
 	float: right;
 }
 
 .contact__item {
 	display: inline-block;
-	margin-left: 80px;
+	margin-left: 105px;
 	&:first-child {
 		margin-left: 0;
 	}
 }
 
 .social__link {
-	@include icons-sprite(map_pin);
-	padding-left: 25px;
+	position: relative;
 	font-size: 14px;
 	color: #333;
 	&:hover {
 		text-decoration: underline;
 	}
 }
+.social__link:before {
+	content: '';
+	position: absolute;
+	@include get-sprite($socials-map,map_pin);
+	left: -20px;
+	top: 2px;
+}
 
 .social__link_number {
-	@include icons-sprite(telephone);
+	position: relative;
 	font-size: 18px;
 }
+
+.social__link_number:before {
+	content: '';
+	position: absolute;
+	@include get-sprite($socials-map,telephone);
+	left: -23px;
+	top: 6px;
+}
+
+
 
 .header_page {
 	vertical-align: top;
@@ -91,7 +103,7 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 .search {
 	display: inline-block;
 	vertical-align: top;
-	margin: 1px 0 0 53px;
+	margin: 2px 0 0 55px;
 }
 
 .search__text {
