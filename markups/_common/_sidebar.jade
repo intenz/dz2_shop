@@ -1,11 +1,106 @@
+.sidebar-nav
+	ul.sidebar-nav__list
+		li.sidebar-nav__item
+			a(href="#").sidebar-nav__link Флагманы
+		li.sidebar-nav__item.active
+			a(href="#").sidebar-nav__link Бюджетная линейка
+
 .accordeon
-	.accordeon__content
-		h2.accordeon__item.accordeon__item_acive Наличие в магазинах
-		.accordeon__item
-			a(href="#").accordeon__link Бренды
-		.accordeon__item
-			a(href="#").accordeon__link Цена
-		.accordeon__item
-			a(href="#").accordeon__link Цвет
-		.accordeon__item
-			a(href="#").accordeon__link Операционные системы
+	ul.accordeon__content
+		li.accordeon__item
+			a(href="#").accordeon__trigger Наличие в магазинах
+			ul.inner__list
+				li.inner__item
+					input(type="radio" name="shop" id="all_shop")
+					label(for="all_shop").inner__labe
+						|Во всех магазинах
+				li.inner__item
+					input(type="radio" name="shop" id="closer_shop")
+					label(for="closer_shop").inner__labe
+						|В ближайшем ко мне магазине
+		li.accordeon__item
+			a(href="#").accordeon__trigger Бренды
+			ul.inner__list
+				li.inner__item
+					input(type="checkbox" name="brand" id="Lenovo")
+					label(for="Lenovo").inner__labe
+						|Lenovo
+				li.inner__item
+					input(type="checkbox" name="brand" id="Apple")
+					label(for="Apple").inner__labe
+						|Apple
+				li.inner__item
+					input(type="checkbox" name="brand" id="samsung")
+					label(for="samsung").inner__labe
+						|Samsung
+				li.inner__item
+					input(type="checkbox" name="brand" id="asus")
+					label(for="asus").inner__labe
+						|Asus
+				li.inner__item
+					input(type="checkbox" name="brand" id="motorola")
+					label(for="motorola").inner__labe
+						|Motorola
+				li.ineer_item
+					input(type="reset" value="Сбросить фильтр")
+		li.accordeon__item
+			a(href="#").accordeon__trigger Цена
+			ul.inner__list
+				li.inner__item
+					label(for="amount").inner__labe от
+					input(type="text" id="amount" placeholder="100")
+					label(for="amount1").inner__labe до
+					input(type="text" id="amount1" placeholder="13 000")
+					#slider-range
+		li.accordeon__item
+			a(href="#").accordeon__trigger Цвет
+			ul.inner__list.inner_list_color
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_white white
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_grey grey
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_black black
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_blue blue
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_red red
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_yellow yellow
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_orange orange
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_green green
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_babyblue babyblue
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_pink pink
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_light-pink light-pink
+				li.inner__item.inner_item_color
+					a(href="#").color__link.color__link_brown brown
+		li.accordeon__item
+			a(href="#").accordeon__trigger Операционные системы
+			ul.inner__list
+				li.inner__item
+					input(type="checkbox" name="brand" id="android")
+					label(for="android").inner__labe
+						|Android
+				li.inner__item
+					input(type="checkbox" name="brand" id="IOS")
+					label(for="IOS").inner__labe
+						|IOS
+				li.inner__item
+					input(type="checkbox" name="brand" id="windows")
+					label(for="windows").inner__labe
+						|Windows Mobile
+				li.inner__item
+					input(type="checkbox" name="brand" id="Sysmbian")
+					label(for="Sysmbian").inner__labe
+						|Sysmbian
+				li.inner__item
+					input(type="checkbox" name="brand" id="Custom")
+					label(for="Custom").inner__labe
+						|Custom
+				li.inner__item
+						input(type="reset" value="Сбросить фильтр")
