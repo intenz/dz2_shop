@@ -1,0 +1,70 @@
+.footer {
+	background: url(../img/bg_footer.png)no-repeat;
+	background-size: cover;
+	padding: 30px 0 0;
+}
+
+.logo__link_footer {
+	padding-top: 40px;
+}
+
+.socials_footer {
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.socials__item_footer {
+	margin-left: 23px;
+}
+
+$socials: vk_footer, tw_footer, fb_footer;
+
+
+$socials-map: sprite-map('icons/*.png', $spacing: 70px);
+
+
+@each $social in $socials {
+	.socials__link_#{$social} {
+		@include get-sprite($socials-map, $social);
+	}
+}
+
+.navigation_footer {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.navigation_footer__list {
+	width: 570px;
+	float: right;
+	margin-top: -12px;
+}
+
+.navigation_footer__item {
+	display: inline-block;
+	margin-left: 20px;
+	&:first-child{
+		margin-left: 0;
+	}
+	&:nth-child(4){
+		margin-left: 0;
+	}
+}
+
+.navigation_footer__link {
+	color: #fff;
+	line-height: 36px;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.footer__content {
+	text-align: center;
+	padding: 5px 0;
+	color: #fff;
+	font-size: 12px;
+	border-top: 1px solid #494949;
+}

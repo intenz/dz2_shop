@@ -1,0 +1,152 @@
+@mixin get-sprite ($map, $icon) {
+	$sprite-image: sprite-file($map, $icon);
+	$sprite-map: sprite-url($map);
+	$sprite-position: sprite-position($map, $icon);
+
+	background: $sprite-map $sprite-position no-repeat;
+
+	$sprite-height: image-height($sprite-image);
+	$sprite-width: image-width($sprite-image);
+
+	height: $sprite-height;
+	width: $sprite-width;
+}
+
+.header_info {
+	background: #fff;
+	padding: 25px 0 28px;
+	border-bottom: 2px solid #ebedef;
+}
+
+.socials__list {
+	float: left;
+}
+.socials__item {
+	display: inline-block;
+	margin-left: 12px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.socials__link {
+	display: inline-block;
+	text-indent: -9999px;
+	border-radius: 50%;
+}
+
+$socials: vk, tw, fb;
+
+
+$socials-map: sprite-map('icons/*.png', $spacing: 70px);
+
+
+@each $social in $socials {
+	.socials__link_#{$social} {
+		@include get-sprite($socials-map, $social);
+	}
+}
+
+.contact__list {
+	margin-top: 2px;
+	float: right;
+}
+
+.contact__item {
+	display: inline-block;
+	margin-left: 80px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.social__link {
+	@include icons-sprite(map_pin);
+	padding-left: 25px;
+	font-size: 14px;
+	color: #333;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.social__link_number {
+	@include icons-sprite(telephone);
+	font-size: 18px;
+}
+
+.header_page {
+	vertical-align: top;
+	padding: 28px 0 25px;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo__link {
+	display: inline-block;
+}
+
+.search {
+	display: inline-block;
+	vertical-align: top;
+	margin: 1px 0 0 53px;
+}
+
+.search__text {
+	width: 253px;
+	padding: 8px 17px 7px;
+	color: #7f7f7f;
+	border: 1px solid #dee1e4;
+	border-radius: 3px;
+	background: #fbfbfb;
+}
+
+.search__submit {
+	margin-left: -5px;
+	font-size: 16px;
+	background: #ff6708;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	color: #fff;
+	padding: 8px 14px;
+	text-shadow: 1px 0 0 rgba(255,255,255,.5), -1px 0 0 rgba(255,255,255,.5);
+	letter-spacing: 1px;
+}
+
+.nav-header {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+	padding-top: 8px;
+}
+
+.nav-header__item{
+	display: inline-block;
+	margin-left: 30px;
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.nav-header_link {
+	font-size: 16px;
+	font-weight: 900px;
+	color: #333;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		color: #ff6600;
+		text-decoration: underline;
+	}
+}
+
+.nav-header_active .nav-header_link{
+	color: #ff6600;
+	&:hover {
+		text-decoration: underline;
+	}
+}
