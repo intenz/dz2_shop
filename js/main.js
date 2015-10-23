@@ -39,9 +39,9 @@ jQuery(document).ready(function($) {
             display.find('img').fadeOut(duration,function(){
                 $(this).attr('src', path).fadeIn(duration);
             });
+            
         }
     });
-
 
 
     $(function() {
