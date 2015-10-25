@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             });
             
         }
-    });
+    }); // - > end slid_show img
 
 
     $(function() {
@@ -96,6 +96,9 @@ jQuery(document).ready(function($) {
       });
 
     }); // -> end slider UI
+
+
+
 
 }); // - > ready_end
 

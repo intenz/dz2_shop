@@ -770,7 +770,7 @@ p {
   text-decoration: underline;
 }
 
-.navigation {
+.wrapp_navipaion {
   background: #fff;
   border-bottom: 2px solid #ebedef;
   margin-bottom: 25px;
@@ -1466,7 +1466,7 @@ input[type="radio"]:checked + label:before {
   display: none;
 }
 
-.var_list {
+.var__list {
   display: block;
   float: right;
   margin-bottom: 20px;
