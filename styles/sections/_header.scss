@@ -148,10 +148,10 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 	color: #333;
 	text-decoration: underline;
 	&:hover {
+		color: #ff6600;
 		text-decoration: none;
 	}
 	&:active {
-		color: #ff6600;
 		text-decoration: underline;
 	}
 }

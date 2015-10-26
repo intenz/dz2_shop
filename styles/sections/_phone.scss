@@ -37,6 +37,7 @@
 .bar__select {
 	margin-left: 5px;
 	width: 140px;
+	color: #7f7f7f;
 	box-sizing: border-box;
 	padding: 0 5px 5px 10px;
 	-webkit-appearance: none;
@@ -44,7 +45,11 @@
 	border-top: 1px solid #ddd;
 	border-radius: 3px;
 	outline: none;
-	box-shadow: 0px 1px 0 2px rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 1px 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.bar__option {
+
 }
 
 .bar__lable:after {
@@ -80,6 +85,7 @@
 	text-indent: -9999px;
 	width: 18px;
 	height: 18px;
+
 }
 
 .bar__link_ls1 {
@@ -90,6 +96,11 @@
 		@include get-sprite($socials-map,bar_list_hover);
 	}
 }
+.bar__link_ls1.active{
+		@include get-sprite($socials-map,bar_list_hover);
+}
+
+
 .bar__link_ls2 {
 	@include get-sprite($socials-map,bar_list2);
 		width: 18px;
@@ -98,6 +109,10 @@
 		@include get-sprite($socials-map,bar_list2_hover);
 	}
 }
+.bar__link_ls2.active {
+		@include get-sprite($socials-map,bar_list2_hover);
+}
+
 .bar__link_ls3 {
 	@include get-sprite($socials-map,bar_list3);
 		width: 18px;
@@ -106,10 +121,18 @@
 		@include get-sprite($socials-map,bar_list3_hover);
 	}
 }
+.bar__link_ls3.active{
+		@include get-sprite($socials-map,bar_list3_hover);
+	}
+
+
 .bar__link {
 	background-position-x: 1px;
 }
 
+.horizon2__span {
+	display: none;
+}
 
 
 // =================view thumbnail ================
@@ -189,6 +212,7 @@
 .slid_show__link {
 	display: block;
 	padding-top: 1px;
+	text-align: center;
 }
 
 .phone__name {
@@ -236,9 +260,9 @@
 .stars__descr {
 	display: inline;
 	padding: 0 11px;
-	margin-left: 7px;
+	margin-left: 9px;
 	line-height: 0;
-	font-size: 12px;
+	font-size: 11px;
 	background: #b5beca;
 	color: #fff;
 	border-radius: 15px;
@@ -293,169 +317,202 @@
 .phone__dec_horizon2 {
 	display: none;
 }
+.horizon2__span {
+	display: none;
+}
+
 
 // ================= view list ================
-// .phone__item_horiz {
-// 	display: block;
-// 	width: 100%;
-// 	text-align: left;
-// 	padding: 14px 12px 14px;
-// 	border-top: none;
-// 	margin-bottom: 0;
-// 	margin-left: 0;
-// 	border-radius: 0;
-// 	&:first-child {
-// 		border-top: 1px solid #dee1e4;
-// 		border-radius: 5px 5px 0 0;
-// 	}
-// 	&:last-child {
-// 		border-radius: 0 0 5px 5px;
-// 	}
-// }
+.horizon .phone__item_horiz {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: left;
+	padding: 14px 12px 14px;
+	border-top: none;
+	margin-bottom: 0;
+	margin-left: 0;
+	border-radius: 0;
+	&:first-child {
+		border-top: 1px solid #dee1e4;
+		border-radius: 5px 5px 0 0;
+	}
+	&:last-child {
+		border-radius: 0 0 5px 5px;
+	}
+	&:hover {
+		z-index: 1;
+	}
+}
 
-// .phone__item_horiz:first-child .phone__name {
-// 	width: 290px;
-// }
+.horizon .phone__item_horiz:first-child .phone__name {
+	width: 290px;
+}
 
-// .phone__link,
-// .slid_show_list,
-// .stars,
-// .phone__dec {
-// 	display: none;
-// }
+.horizon .phone__link,
+.horizon .slid_show_list,
+.horizon .stars,
+.horizon .phone__dec {
+	display: none;
+}
 
-// .artukyl {
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	color: #7f7f7f;
-// 	font-size: 12px;
-// 	width: 100px;
-// 	overflow: hidden;
-// 	white-space: nowrap;
-// }
-// .art__number {
-// 	color: #333;
-// 	font-size: 14px;
-// 	margin-left: 3px;
-// }
+.horizon .artukyl {
+	display: inline-block;
+	vertical-align: middle;
+	color: #7f7f7f;
+	font-size: 12px;
+	width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.horizon .art__number {
+	color: #333;
+	font-size: 14px;
+	margin-left: 3px;
+}
 
-// .phone__name_horiz {
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	margin-left: 9px;
-// 	width: 290px;
-// 	padding-bottom: 0;
-// 	overflow: hidden;
-// 	white-space: nowrap;
-// }
+.horizon .phone__name_horiz {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 9px;
+	width: 290px;
+	padding-bottom: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
 
-// .phone__name_horiz:before {
-// 	content: 'Smart';
-// 	margin-right: 5px;
-// 	float: left;
-// }
+.horizon .rating {
+	position: absolute;
+	top: 10px;
+	right: 247px;
+	text-align: right;
+	margin: 0;
+}
+.horizon .rating__price_horiz {
+	display: inline-block;
+	font-size: 18px;
+	width: 90px;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0;
+}
 
-// .rating {
-// 	display: inline;
-// }
-// .rating__price_horiz {
-// 	display: inline-block;
-// 	width: 90px;
-// 	vertical-align: middle;
-// 	overflow: hidden;
-// 	white-space: nowrap;
-// 	margin: 0;
-// }
+.horizon .buy__phone_horiz {
+	float: right;
+	margin-top: -20px;
+	margin-right: 3px;
+	.buy__link {
+		margin: 0;
+		margin-left: 25px;
+	}
+}
 
-// .buy__phone_horiz {
-// 	float: right;
-// 	.buy__link {
-// 		margin: 0;
-// 		margin-left: 25px;
-// 	}
-// }
+.horizon .horizon2__span {
+	display: inline-block;
+	margin-right: 3px;
+}
 
 // ================= view list 2 ================
 
-// .phone__item_horizon2 {
-// 	display: block;
-// 	width: 100%;
-// 	height: 246px;
-// 	text-align: left;
-// 	padding: 14px 12px 14px;
-// 	position: relative;
-// 	border-top: none;
-// 	margin-bottom: 0;
-// 	margin-left: 0;
-// 	border-radius: 0;
-// 	.slid_show_list {
-// 		position: absolute;
-// 		bottom: 28px;
-// 		left: 22px;
-// 	}
-// 	&:first-child {
-// 		border-top: 1px solid #dee1e4;
-// 		border-radius: 5px 5px 0 0;
-// 	}
-// 	&:last-child {
-// 		border-radius: 0 0 5px 5px;
-// 	}
-// }
+.vertical .phone__item_horizon2 {
+	display: block;
+	width: 100%;
+	height: 246px;
+	text-align: left;
+	padding: 14px 12px 14px;
+	position: relative;
+	border-top: none;
+	margin-bottom: 0;
+	margin-left: 0;
+	border-radius: 0;
+	.slid_show_list {
+		position: absolute;
+		bottom: 28px;
+		left: 22px;
+	}
+	&:first-child {
+		border-top: 1px solid #dee1e4;
+		border-radius: 5px 5px 0 0;
+	}
+	&:last-child {
+		border-radius: 0 0 5px 5px;
+	}
+	&:hover {
+		z-index: 1;
+	}
+}
 
-// .phone__name_horizon2 {
-// 	font-size: 18px;
-// 	font-weight: 900;
-// 	margin: 8px 0 21px 0;
-// }
+.vertical .phone__item_horizon2:before {
+	content: '';
+	width: 1px;
+	height: 203px;
+	position: absolute;
+	top: 18px;
+	right: 153px;
+	background: #dee1e4;
+}
 
-// .phone__item_horizon2:first-child .phone__name {
-// 	width: 290px;
-// }
-// .phone__name_horiz {
-// 	width: 370px;
-// 	display: inline-block
-// }
+.vertical .phone__name_horizon2 {
+	font-size: 18px;
+	font-weight: 900;
+	margin: 8px 0 21px 0;
+	padding-bottom: 0;
+}
 
-// .phone__link_horizon2 {
-// 	width: 135px;
-// 	float: left;
-// 	margin: 4px 25px 90px 10px;
-// }
+.vertical .phone__item_horizon2:first-child .phone__name {
+	width: 400px;
+}
+.vertical .phone__name_horiz {
+	width: 400px;
+	display: inline-block
+}
 
-// .phone__dec{
-// 	display: none;
-// }
+.vertical .phone__link_horizon2 {
+	width: 135px;
+	float: left;
+	margin: 4px 25px 90px 10px;
+}
 
-// .phone__dec_horizon2 {
-// 	display: inline-block;
-// 	width: 370px;
-// 	margin-bottom: 7px;
-// }
-// .artukyl_horizon2{
-// 	display: block;
-// 	position: absolute;
-// 	bottom: 14px;
-// 	left: 34px;
-// }
-// .rating__price_horizon2 {
-// 	position: absolute;
-// 	right: 25px;
-// 	top: 15px;
-// }
+.vertical .phone__dec{
+	display: none;
+}
 
-// .buy__phone_horizon2 {
-// 	position: absolute;
-// 	bottom: -12px;
-// 	right: -46px;
-// 	float: right;
-// 	.buy__link {
-// 		position: relative;
-// 		display: inherit;
-// 		right: 53px;
-// 		bottom: 55px;
-// 	}
-// }
+.vertical .phone__dec_horizon2 {
+	display: inline-block;
+	width: 370px;
+	margin-bottom: 7px;
+}
+.vertical .artukyl_horizon2{
+	display: block;
+	position: absolute;
+	bottom: 14px;
+	left: 34px;
+}
+.vertical .rating__price_horizon2 {
+	position: absolute;
+	right: 25px;
+	top: 15px;
+}
 
+.vertical .buy__phone_horizon2 {
+	position: absolute;
+	bottom: -12px;
+	right: -46px;
+	float: right;
+	.buy__link {
+		position: relative;
+		display: inherit;
+		right: 53px;
+		bottom: 55px;
+	}
+}
+
+.vertical .stars__horizon2 {
+	position: absolute;
+	left: 183px;
+	bottom: 66px;
+}
 
 //================ end ====================
 
@@ -500,7 +557,7 @@
 
 .info__text_other_wrap {
 	float: right;
-	width: 540px;
+	width: 530px;
 }
 
 .info__text {

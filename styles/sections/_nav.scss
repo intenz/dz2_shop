@@ -56,6 +56,12 @@
 
 .list_page__link {
 	color: #333;
+	&:hover {
+		color: #ff6600;
+	}
+	&:active {
+		text-decoration: underline;
+	}
 }
 
 .list_page__item_active {

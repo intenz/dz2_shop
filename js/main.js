@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
 	$('.accordeon__trigger').on('click', function(e){
 		e.preventDefault();
 
@@ -97,7 +97,46 @@ jQuery(document).ready(function($) {
 
     }); // -> end slider UI
 
+    $('.bar__link_ls3').on('click', function(e){
+     e.preventDefault();
+        $('.bar__link_ls3').addClass('active');
+        $('.bar__link_ls2').removeClass('active');
+        $('.bar__link_ls1').removeClass('active');
+       $('.wrapp_variable').removeClass('vertical');
+      
+       $('.wrapp_variable').addClass('horizon');
+   });
 
+    $('.bar__link_ls2').on('click', function(e){
+     e.preventDefault();
+     $('.bar__link_ls2').addClass('active');
+        $('.bar__link_ls3').removeClass('active');
+        $('.bar__link_ls1').removeClass('active');
+
+       $('.wrapp_variable').removeClass('horizon').removeClass('vertical');
+    });
+    $('.bar__link_ls1').on('click', function(e){
+     e.preventDefault();
+     $('.bar__link_ls1').addClass('active');
+        $('.bar__link_ls2').removeClass('active');
+        $('.bar__link_ls3').removeClass('active');
+
+       $('.wrapp_variable').removeClass('horizon');
+      
+
+       $('.wrapp_variable').addClass('vertical');
+ }); // -> end phone_slider
+    $('.accordeon__reset-filter').on('click', function(e){
+    e.preventDefault();
+
+    var $this = $(this);
+    var accordeonItem = $this.closest('.accordeon__item');
+    var input = accordeonItem.find('input');
+
+      input.each(function(){
+        $(this).prop('checked', false);
+      });
+    }); // end acordeon_reset
 
 
 }); // - > ready_end

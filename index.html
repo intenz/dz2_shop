@@ -26,8 +26,8 @@
 							<li class="socials__item"><a href="#" class="socials__link socials__link_tw">tw</a></li>
 						</ul>
 						<ul class="contact__list">
-							<li class="contact__item"><a class="social__link">ул.Маяковская 6, офис 17</a></li>
-							<li class="contact__item"><a class="social__link social__link_number">+7 (921) 123-12-13</a></li>
+							<li class="contact__item"><a href="#" class="social__link">ул.Маяковская 6, офис 17</a></li>
+							<li class="contact__item"><a href="tel:+792112312313" class="social__link social__link_number">+7 (921) 123-12-13</a></li>
 						</ul>
 					</div>
 				</div>
@@ -123,7 +123,7 @@
 													<label for="motorola" class="inner__labe">Motorola</label>
 												</li>
 												<li class="ineer_item">
-													<input type="reset" value="Сбросить фильтр">
+													<input type="reset" value="Сбросить фильтр" class="accordeon__reset-filter">
 												</li>
 											</ul>
 										</li>
@@ -177,7 +177,7 @@
 													<label for="Custom" class="inner__labe">Custom</label>
 												</li>
 												<li class="inner__item">
-													<input type="reset" value="Сбросить фильтр">
+													<input type="reset" value="Сбросить фильтр" class="accordeon__reset-filter">
 												</li>
 											</ul>
 										</li>
@@ -189,15 +189,15 @@
 									<form class="bar_form">
 										<lable class="bar__lable">Сортировать по
 											<select class="bar__select">
-												<option value="по цене">по цене</option>
-												<option value="по цене">по цене</option>
+												<option value="по цене" class="bar__option">по цене</option>
+												<option value="по цене" class="bar__option">по популярности</option>
 											</select>
 										</lable>
 									</form>
 									<ul class="bar_list">
 										<li class="bar__item">Вид каталога</li>
 										<li class="bar__item"><a href="#" class="bar__link bar__link_ls1">list1</a></li>
-										<li class="bar__item"><a href="#" class="bar__link bar__link_ls2">list2</a></li>
+										<li class="bar__item"><a href="#" class="bar__link bar__link_ls2 active">list2</a></li>
 										<li class="bar__item"><a href="#" class="bar__link bar__link_ls3">list3</a></li>
 									</ul>
 								</div>
@@ -210,17 +210,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/sumsung-sd.png" alt="sumsung-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/sumsung-bk.png" alt="sumsung-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Samsung GT-I9301I GALAXY S 3</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">1</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Белый</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Android</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Samsung GT-I9301I GALAXY S 3</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">1</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Белый</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Android</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">11 290 &#8381;</h3>
@@ -234,17 +236,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/lumia-sd.png" alt="lumia-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/lumia-bk.png" alt="sumsung-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Microsoft Lumia 640 RM-1077</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Белый</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Windowns Phone</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">A-GPS</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Microsoft Lumia 640 RM-1077</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft... </li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Белый</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Windowns Phone</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">A-GPS</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">10 990 &#8381;</h3>
@@ -258,17 +262,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/arhos-sd.png" alt="arhos-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/arhos-bk.png" alt="arhos-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Archos 50 Oxygen Plus </h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Серый</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Android</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Archos 50 Oxygen Plus </h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Archos 50 Oxygen Plus, серый. Моноблок, Micro-SIM, Android , 3G, Bluetooth, USB-подключение к ПК, Wi-Fi, Разрешение основной камеры 8 Мп... </li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Серый</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Android</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">9 900 &#8381;</h3>
@@ -282,17 +288,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/phillips-sd.png" alt="phillips-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/phillips-bk.png" alt="phillips-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Philips S398 Black</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">&nbsp;<span class="phone__span">&nbsp;</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">&nbsp;<span class="phone__span">&nbsp;</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Android</span></p>
-											<p class="phone__dec">&nbsp;<span class="phone__span">&nbsp;</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">&nbsp;<span class="phone__span">&nbsp; </span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Philips S398 Black</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Philips S398 Black. Черный корпус и разнообразие цветных панелей для Philips S398 как нельзя лучше подчеркнут ваш статус и уверенность в себе. Преимущества этой модели...</li>
+												<li class="phone__dec">&nbsp;<span class="phone__span">&nbsp;</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">&nbsp;<span class="phone__span">&nbsp;</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Android</span></li>
+												<li class="phone__dec">&nbsp;<span class="phone__span">&nbsp;</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">&nbsp;<span class="phone__span">&nbsp; </span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">8 990 &#8381;</h3>
@@ -306,17 +314,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/lumia1-sd.png" alt="lumia1-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/lumia1-bk.png" alt="lumia1-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Microsoft Lumia 430 RM-10</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Черный</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Windowns Phone</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">A-GPS</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Microsoft Lumia 430 RM-10</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM (RM-1099) удобный компактный корпус ...</li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Черный</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Windowns Phone</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">A-GPS</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">5 390 &#8381;</h3>
@@ -330,17 +340,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/senset-sd.png" alt="senset-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/senset-bk.png" alt="senset-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Senseit L301 Black</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Черный</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Android</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Senseit L301 Black</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Senseit L301 black, черный. Micro-SIM, две поддерживаемых SIM-карты, Android, 3G, GPS-модуль...</li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Черный</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Android</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">4 990 &#8381;</h3>
@@ -354,17 +366,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/high-sd.png" alt="high-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/high-bk.png" alt="high-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">HIGHSCREEN WinWin Black</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Черный</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Windowns Phone</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>HIGHSCREEN WinWin Black</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон HIGHSCREEN WinWin Black оснащен 4" дисплеем и двумя слотами для SIM-карт.  Windows Phone , 3G, Bluetooth, USB-подключение к ПК...</li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Черный</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Windowns Phone</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">Есть</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">3 990 &#8381;</h3>
@@ -378,17 +392,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/alcatel-sd.png" alt="alcatel-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/alcatel-bk.png" alt="alcatel-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Alcatel OT4013D PIXI 3 (2 SIM)</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Белый</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Android</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Есть</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">A-GPS</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Alcatel OT4013D PIXI 3 (2 SIM)</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Смартфон Alcatel OT4013D PIXI 3 (2 SIM). Смартфон Alcatel One Touch 4013D оснащен четырехдюймовым дисплеем и двумя слотами для SIM-карт...</li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Белый</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Android</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Есть</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">A-GPS</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">3 290 &#8381;</h3>
@@ -402,17 +418,19 @@
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/fly-sd.png" alt="fly-sd"></a></li>
 												<li class="slid_show__item"><a href="#" class="slid_show__link"><img src="img/fly-bk.png" alt="fly-bk"></a></li>
 											</ul>
-											<h2 class="phone__name phone__name_horiz phone__name_horizon2">Fly IQ434 Era Nano 5</h2>
-											<p class="phone__dec_horizon2">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... </p>
-											<p class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></p>
-											<p class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></p>
-											<p class="phone__dec">Цвет<span class="phone__span">Черный</span></p>
-											<p class="phone__dec">ОC<span class="phone__span">Android</span></p>
-											<p class="phone__dec">Связь 3G<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></p>
-											<p class="phone__dec">GPS-модуль<span class="phone__span">Нет</span></p>
+											<h2 class="phone__name phone__name_horiz phone__name_horizon2"><span class="horizon2__span">Смартфон</span>Fly IQ434 Era Nano 5</h2>
+											<ul class="phone__dec-list">
+												<li class="phone__dec_horizon2">Смартфон Fly IQ434 Era Nano 5 оснащен 3.5" дисплеем и двумя слотами для SIM-карт. Android 2.3, Micro SD, Wi-Fi....</li>
+												<li class="phone__dec">Тип SIM-карты<span class="phone__span">Micro-SIM</span></li>
+												<li class="phone__dec">Количество SIM-карт <span class="phone__span">2</span></li>
+												<li class="phone__dec">Цвет<span class="phone__span">Черный</span></li>
+												<li class="phone__dec">ОC<span class="phone__span">Android</span></li>
+												<li class="phone__dec">Связь 3G<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">4G (LTE)<span class="phone__span">Нет</span></li>
+												<li class="phone__dec">GPS-модуль<span class="phone__span">Нет</span></li>
+											</ul>
 											<div class="rating">
-												<div class="stars"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
+												<div class="stars stars__horizon2"><a class="stars__link"><img src="img/stars.png" alt="stars"></a>
 													<p class="stars__descr">4</p>
 												</div>
 												<h3 class="rating__price rating__price_horiz rating__price_horizon2">1 790 &#8381;</h3>

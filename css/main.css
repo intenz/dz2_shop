@@ -756,10 +756,10 @@ p {
   text-decoration: underline;
 }
 .nav-header_link:hover {
+  color: #ff6600;
   text-decoration: none;
 }
 .nav-header_link:active {
-  color: #ff6600;
   text-decoration: underline;
 }
 
@@ -831,6 +831,12 @@ p {
 .list_page__link {
   color: #333;
 }
+.list_page__link:hover {
+  color: #ff6600;
+}
+.list_page__link:active {
+  text-decoration: underline;
+}
 
 .list_page__item_active {
   text-decoration: underline;
@@ -875,7 +881,7 @@ p {
   background: #d9e5ea;
 }
 
-.accordeon__trigger:after {
+.accordeon__item:hover .accordeon__trigger:after {
   content: '';
   position: absolute;
   right: 10px;
@@ -1197,6 +1203,7 @@ input[type="radio"]:checked + label:before {
 .bar__select {
   margin-left: 5px;
   width: 140px;
+  color: #7f7f7f;
   box-sizing: border-box;
   padding: 0 5px 5px 10px;
   -webkit-appearance: none;
@@ -1204,7 +1211,7 @@ input[type="radio"]:checked + label:before {
   border-top: 1px solid #ddd;
   border-radius: 3px;
   outline: none;
-  box-shadow: 0px 1px 0 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 0 1px rgba(255, 255, 255, 0.3);
 }
 
 .bar__lable:after {
@@ -1257,6 +1264,12 @@ input[type="radio"]:checked + label:before {
   width: 18px;
 }
 
+.bar__link_ls1.active {
+  background: url('../img/icons-sd11d51d8b4.png') 0 -596px no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
 .bar__link_ls2 {
   background: url('../img/icons-sd11d51d8b4.png') 0 -248px no-repeat;
   height: 16px;
@@ -1265,6 +1278,12 @@ input[type="radio"]:checked + label:before {
   height: 18px;
 }
 .bar__link_ls2:hover {
+  background: url('../img/icons-sd11d51d8b4.png') 0 -334px no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
+.bar__link_ls2.active {
   background: url('../img/icons-sd11d51d8b4.png') 0 -334px no-repeat;
   height: 18px;
   width: 18px;
@@ -1283,8 +1302,18 @@ input[type="radio"]:checked + label:before {
   width: 18px;
 }
 
+.bar__link_ls3.active {
+  background: url('../img/icons-sd11d51d8b4.png') 0 -508px no-repeat;
+  height: 18px;
+  width: 18px;
+}
+
 .bar__link {
   background-position-x: 1px;
+}
+
+.horizon2__span {
+  display: none;
 }
 
 .phone_list {
@@ -1362,6 +1391,7 @@ input[type="radio"]:checked + label:before {
 .slid_show__link {
   display: block;
   padding-top: 1px;
+  text-align: center;
 }
 
 .phone__name {
@@ -1409,9 +1439,9 @@ input[type="radio"]:checked + label:before {
 .stars__descr {
   display: inline;
   padding: 0 11px;
-  margin-left: 7px;
+  margin-left: 9px;
   line-height: 0;
-  font-size: 12px;
+  font-size: 11px;
   background: #b5beca;
   color: #fff;
   border-radius: 15px;
@@ -1466,6 +1496,204 @@ input[type="radio"]:checked + label:before {
   display: none;
 }
 
+.horizon2__span {
+  display: none;
+}
+
+.horizon .phone__item_horiz {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 12px 14px;
+  border-top: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-radius: 0;
+}
+.horizon .phone__item_horiz:first-child {
+  border-top: 1px solid #dee1e4;
+  border-radius: 5px 5px 0 0;
+}
+.horizon .phone__item_horiz:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.horizon .phone__item_horiz:hover {
+  z-index: 1;
+}
+
+.horizon .phone__item_horiz:first-child .phone__name {
+  width: 290px;
+}
+
+.horizon .phone__link,
+.horizon .slid_show_list,
+.horizon .stars,
+.horizon .phone__dec {
+  display: none;
+}
+
+.horizon .artukyl {
+  display: inline-block;
+  vertical-align: middle;
+  color: #7f7f7f;
+  font-size: 12px;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.horizon .art__number {
+  color: #333;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.horizon .phone__name_horiz {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9px;
+  width: 290px;
+  padding-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.horizon .rating {
+  position: absolute;
+  top: 10px;
+  right: 247px;
+  text-align: right;
+  margin: 0;
+}
+
+.horizon .rating__price_horiz {
+  display: inline-block;
+  font-size: 18px;
+  width: 90px;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.horizon .buy__phone_horiz {
+  float: right;
+  margin-top: -20px;
+  margin-right: 3px;
+}
+.horizon .buy__phone_horiz .buy__link {
+  margin: 0;
+  margin-left: 25px;
+}
+
+.horizon .horizon2__span {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.vertical .phone__item_horizon2 {
+  display: block;
+  width: 100%;
+  height: 246px;
+  text-align: left;
+  padding: 14px 12px 14px;
+  position: relative;
+  border-top: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-radius: 0;
+}
+.vertical .phone__item_horizon2 .slid_show_list {
+  position: absolute;
+  bottom: 28px;
+  left: 22px;
+}
+.vertical .phone__item_horizon2:first-child {
+  border-top: 1px solid #dee1e4;
+  border-radius: 5px 5px 0 0;
+}
+.vertical .phone__item_horizon2:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.vertical .phone__item_horizon2:hover {
+  z-index: 1;
+}
+
+.vertical .phone__item_horizon2:before {
+  content: '';
+  width: 1px;
+  height: 203px;
+  position: absolute;
+  top: 18px;
+  right: 153px;
+  background: #dee1e4;
+}
+
+.vertical .phone__name_horizon2 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 8px 0 21px 0;
+  padding-bottom: 0;
+}
+
+.vertical .phone__item_horizon2:first-child .phone__name {
+  width: 400px;
+}
+
+.vertical .phone__name_horiz {
+  width: 400px;
+  display: inline-block;
+}
+
+.vertical .phone__link_horizon2 {
+  width: 135px;
+  float: left;
+  margin: 4px 25px 90px 10px;
+}
+
+.vertical .phone__dec {
+  display: none;
+}
+
+.vertical .phone__dec_horizon2 {
+  display: inline-block;
+  width: 370px;
+  margin-bottom: 7px;
+}
+
+.vertical .artukyl_horizon2 {
+  display: block;
+  position: absolute;
+  bottom: 14px;
+  left: 34px;
+}
+
+.vertical .rating__price_horizon2 {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+.vertical .buy__phone_horizon2 {
+  position: absolute;
+  bottom: -12px;
+  right: -46px;
+  float: right;
+}
+.vertical .buy__phone_horizon2 .buy__link {
+  position: relative;
+  display: inherit;
+  right: 53px;
+  bottom: 55px;
+}
+
+.vertical .stars__horizon2 {
+  position: absolute;
+  left: 183px;
+  bottom: 66px;
+}
+
 .var__list {
   display: block;
   float: right;
@@ -1506,7 +1734,7 @@ input[type="radio"]:checked + label:before {
 
 .info__text_other_wrap {
   float: right;
-  width: 540px;
+  width: 530px;
 }
 
 .info__text {
@@ -1603,6 +1831,10 @@ input[type="radio"]:checked + label:before {
   text-decoration: underline;
 }
 .navigation_footer__link:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.navigation_footer__link:active {
   text-decoration: none;
 }
 

@@ -13,14 +13,14 @@ block content
 				form.bar_form
 					lable.bar__lable Сортировать по
 						select.bar__select
-							option(value="по цене") по цене
-							option(value="по цене") по цене
+							option(value="по цене").bar__option по цене
+							option(value="по цене").bar__option по популярности
 				ul.bar_list
 					li.bar__item Вид каталога
 					li.bar__item
 						a(href="#").bar__link.bar__link_ls1 list1
 					li.bar__item
-						a(href="#").bar__link.bar__link_ls2 list2
+						a(href="#").bar__link.bar__link_ls2.active list2
 					li.bar__item
 						a(href="#").bar__link.bar__link_ls3 list3
 			include ../_common/_variable-sec

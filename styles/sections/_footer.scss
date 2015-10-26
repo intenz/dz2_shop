@@ -66,6 +66,10 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 	line-height: 36px;
 	text-decoration: underline;
 	&:hover {
+		color: #ff6600;
+		text-decoration: underline;
+	}
+	&:active {
 		text-decoration: none;
 	}
 }

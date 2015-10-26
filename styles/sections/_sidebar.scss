@@ -30,7 +30,7 @@
 	}
 }
 
-.accordeon__trigger:after {
+.accordeon__item:hover .accordeon__trigger:after {
 	content: '';
 	position: absolute;
 	right: 10px;
