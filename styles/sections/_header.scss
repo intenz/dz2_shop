@@ -131,7 +131,7 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 	display: inline-block;
 	float: right;
 	vertical-align: top;
-	padding-top: 8px;
+	margin-top: 8px;
 }
 
 .nav-header__item{
@@ -144,7 +144,7 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 
 .nav-header_link {
 	font-size: 16px;
-	font-weight: 900px;
+	font-weight: 900;
 	color: #333;
 	text-decoration: underline;
 	&:hover {
