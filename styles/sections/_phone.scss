@@ -60,9 +60,16 @@
 	@include get-sprite($socials-map,selec_chek);
 }
 
+.bar__label:before {
+	content: '';
+	position: absolute;
+	right: 3px;
+	top: 8px;
+	@include get-sprite($socials-map,selec_cheked);
+	}
+
 .bar_list {
 	float: right;
-	display: inline-block;
 }
 
 .bar__item {
@@ -149,7 +156,7 @@
 	margin-left: 15px;
 	margin-bottom: 18px;
 	box-sizing: border-box;
-	padding: 20px 10px 27px;
+	padding: 20px 10px 18px;
 	background: #fbfbfb;
 	border: 1px solid #dee1e4;
 	border-radius: 8px;
@@ -173,6 +180,7 @@
 	display: block;
 	padding: 5px 20px;
 	background: #fff;
+	overflow: hidden;
 	border: 1px solid #dee1e4;
 	border-radius: 3px;
 	margin-bottom: 15px;
@@ -272,13 +280,13 @@
 .rating__price {
 	font-size: 20px;
 	font-weight: 900;
-	margin: 8px 0 13px;
+	margin: 5px 5px 6px 0;
 }
 
 .buy__phone {
 	position: relative;
-	display: block;
-	padding-left: 25px;
+	display: inline-block;
+	margin: 0 21px;
 	font-size: 12px;
 	line-height: 16px;
 	color: #7f7f7f;
@@ -287,8 +295,7 @@
 
 
 .buy__link {
-
-	margin:0 18px;
+	display: inline-block;
 	padding: 6px 16px 8px;
 	border-radius: 5px;
 	font-size: 14px;
@@ -304,8 +311,8 @@
 .buy__phone:before {
 		content: '';
 		position: absolute;
-		left: 10px;
-		top: 5px;
+		left: -12px;
+		top: 3px;
 		width: 7px;
 		height: 7px;
 		border-radius: 50%;
@@ -400,13 +407,21 @@
 }
 
 .horizon .buy__phone_horiz {
-	float: right;
-	margin-top: -20px;
-	margin-right: 3px;
-	.buy__link {
-		margin: 0;
-		margin-left: 21px;
-	}
+	position: absolute;
+	right: 141px;
+	top: 20px;
+	text-align: right;
+	width: 67px;
+	margin: 0;
+}
+
+.horizon .buy__link_horiz {
+	position: absolute;
+	right: 14px;
+	top: 9px;
+	width: 72px;
+	height: 20px;
+	overflow: hidden;
 }
 
 .horizon .horizon2__span {
@@ -498,21 +513,23 @@
 .vertical .rating__price_horizon2 {
 	position: absolute;
 	right: 25px;
-	top: 15px;
+	top: 23px;
+	margin: 0;
 }
 
 .vertical .buy__phone_horizon2 {
 	position: absolute;
-	bottom: -15px;
-	right: -46px;
-	float: right;
-	.buy__link {
-		position: relative;
-		display: inherit;
-		right: 53px;
-		bottom: 54px;
-		padding: 8px 16px
-	}
+	bottom: 18px;
+	right: 10px;
+}
+
+.vertical .buy__link_horizon2 {
+	position: absolute;
+	right: 25px;
+	bottom: 40px;
+	width: 72px;
+	height: 20px;
+	overflow: hidden;
 }
 
 .vertical .stars__horizon2 {
