@@ -138,7 +138,7 @@ $(document).ready(function($) {
       });
     }); // end acordeon_reset
 
-
+    $('.bar__select').select2();
 }); // - > ready_end
 
 // $('.info_wrapp').columnize();

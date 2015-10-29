@@ -1,6 +1,7 @@
 {
   "name": "dz1",
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "select2": "~4.0.0"
   }
 }
