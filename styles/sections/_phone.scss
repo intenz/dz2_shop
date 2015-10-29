@@ -60,13 +60,13 @@
 	@include get-sprite($socials-map,selec_chek);
 }
 
-.bar__label:before {
-	content: '';
-	position: absolute;
-	right: 3px;
-	top: 8px;
-	@include get-sprite($socials-map,selec_cheked);
-	}
+// .bar__label:before {
+// 	content: '';
+// 	position: absolute;
+// 	right: 3px;
+// 	top: 8px;
+// 	@include get-sprite($socials-map,selec_cheked);
+// 	}
 
 .bar_list {
 	float: right;
@@ -496,6 +496,7 @@
 
 .vertical .phone__dec_horizon2 {
 	display: inline-block;
+	overflow: hidden;
 	width: 400px;
 	height: 80px;
 	margin-bottom: 7px;

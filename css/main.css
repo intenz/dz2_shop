@@ -1237,16 +1237,6 @@ input[type="radio"]:checked + label:before {
   width: 13px;
 }
 
-.bar__label:before {
-  content: '';
-  position: absolute;
-  right: 3px;
-  top: 8px;
-  background: url('../img/icons-s6ade6a7338.png') 0 -1267px no-repeat;
-  height: 9px;
-  width: 13px;
-}
-
 .bar_list {
   float: right;
 }
@@ -1690,6 +1680,7 @@ input[type="radio"]:checked + label:before {
 
 .vertical .phone__dec_horizon2 {
   display: inline-block;
+  overflow: hidden;
   width: 400px;
   height: 80px;
   margin-bottom: 7px;
