@@ -7,6 +7,7 @@
 
 .socials__list {
 	float: left;
+	width: 50%;
 }
 .socials__item {
 	display: inline-block;
@@ -46,6 +47,8 @@ $socials-map: sprite-map('icons/*.png', $spacing: 70px);
 .contact__list {
 	margin-top: 1px;
 	float: right;
+	width: 50%;
+	text-align: right;
 }
 
 .contact__item {
