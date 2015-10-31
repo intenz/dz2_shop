@@ -657,7 +657,9 @@ p {
 
 .contact__item {
   display: inline-block;
-  margin-left: 105px;
+  vertical-align: top;
+  width: 200px;
+  margin-left: 62px;
 }
 .contact__item:first-child {
   margin-left: 0;
@@ -667,6 +669,7 @@ p {
   position: relative;
   font-size: 14px;
   color: #333;
+  line-height: 23px;
 }
 .social__link:hover {
   text-decoration: underline;
@@ -685,6 +688,7 @@ p {
 .social__link_number {
   position: relative;
   font-size: 18px;
+  line-height: 20px;
 }
 
 .social__link_number:before {
