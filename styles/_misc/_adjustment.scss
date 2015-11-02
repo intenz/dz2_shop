@@ -54,15 +54,19 @@ input {
 
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+    border-spacing: 0px;
+}
+
+legend, td, th {
+    padding: 0;
 }
 
 ul {
     padding: 0;
     margin: 0;
-	list-style: none outside none;
+    list-style: none outside none;
 
-	li {
+    li {
         padding: 0;
         left: 0;
     }
@@ -72,6 +76,7 @@ p {
     padding: 0;
     margin: 0;
 }
+
 
 .footer {
 	position: relative; 

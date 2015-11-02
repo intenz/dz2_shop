@@ -249,27 +249,33 @@
 	color: #333;
 }
 
-.phone__dec {
-	position: relative;
-	font-size: 14px;
+.table__descr {
+	width: 100%;
+	display: block;
+	margin-bottom: 7px;
+}
+
+.table__descr-tr {
+	font-size: 13px;
 	line-height: 20px;
 	color: #333;
-	padding: 0 2px;
-	background: #e6e6e6;
-	&:nth-child(2n){
-		background: #fbfbfb;
-	}
+}
+
+.table__descr-td{
+	box-sizing: border-box;
 	text-align: left;
+	padding-left: 2px;
+	width: 140px;
+	&:last-child{
+		width: 73px;
+		text-align: right;
+		padding-right: 2px;
+		padding-left: 0;
+	}
 }
 
-.phone__span {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.rating {
-	margin-top: 7px;
+.table__descr .table__descr-tr:nth-child(2n-1) {
+	background: #e4e2e2;
 }
 
 .stars__item {
@@ -306,11 +312,14 @@
 .buy__phone {
 	position: relative;
 	display: inline-block;
-	margin: 0 21px;
+	text-align: left;
+	margin: 0 20px 0 0;
+	padding-left: 20px;
 	font-size: 12px;
 	line-height: 16px;
 	color: #7f7f7f;
 	font-weight: 900;
+	overflow: hidden;
 }
 
 
@@ -331,7 +340,7 @@
 .buy__phone:before {
 		content: '';
 		position: absolute;
-		left: -12px;
+		left: 6px;
 		top: 3px;
 		width: 7px;
 		height: 7px;
@@ -380,7 +389,7 @@
 .horizon .phone__link,
 .horizon .slid_show_list,
 .horizon .stars,
-.horizon .phone__dec {
+.horizon .table__descr {
 	display: none;
 }
 .horizon .phone-decription {
@@ -436,7 +445,7 @@
 	vertical-align: top;
 	width: 67px;
 	height: 20px;
-	margin: 4px 0 0 33px;
+	margin: 4px 0 0 14px;
 }
 
 .horizon .buy__link_horiz {
@@ -522,7 +531,7 @@
 	margin: 5px 0 15px;
 }
 
-.vertical .phone__dec{
+.vertical .table__descr{
 	display: none;
 }
 .vertical .phone__dec-list {
@@ -532,6 +541,7 @@
 .vertical .phone__dec_horizon2 {
 	width: 400px;
 	display: inline-block;
+	margin-bottom: 13px;
 }
 
 .vertical .artukyl_horizon2{
@@ -550,7 +560,11 @@
 .vertical .buy__phone_horizon2 {
 	position: absolute;
 	bottom: 18px;
+	padding-left: 20px;
 	right: 10px;
+	width: 65px;
+	height: 15px;
+	overflow: hidden;
 }
 .vertical .rating {
 	display: inline-block;
